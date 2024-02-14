@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="sv">
+
+<!-- Sidans huvud med metainformation, CSS, JS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="javascript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp -->
+
+<body>
+    <div></div>
+    <!-- Header -->
+    <header>
+        <!-- Meny med navigeringslänkar för datorläge -->
+        <nav id="computernav">
+            <!-- Logotyp med länk till startsida -->
+            <a href="start.html">
+                <img id="logo" src="images/logoisa.svg" alt="Isa Westling logotyp" loading="lazy">
+            </a>
+            <span id="navlinks">
+                <a id="active" href="start.html">Startsida</a>
+                <a href="index.html">Videobakgrund</a>
+            </span>
+        </nav>
+        <!-- Menyknapp med ikon för mobilmeny -->
+        <button class="menubtn">
+            <span class="menuicon">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </span>
+            <span id="menutext">Meny</span>
+        </button>
+        <nav id="mobilenav">
+            <ul>
+                <li><a id="mobileactive" href="start.html">Startsida</a></li>
+                <li><a href="index.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll -->
+    <main>
+        <!-- Huvudrubrik -->
+        <h1>VIDEOFILM</h1>
+        <!-- Sektion med underrubrik video i iframe -->
+        <section id="iframevideo">
+            <h2>Mitt liv som hund</h2>
+            <iframe src="https://www.youtube.com/embed/lY0Lho7UkIw?si=oZWNYqTQlxOxnkZC" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </section>
+        <section id="text">
+            <h2>Frågor</h2>
+            <h3>Slutsatser</h3>
+            <p>Jag tycker det har varit en rolig och varierande uppgift. Jag har viss erfarenhet av filmning
+                och redigering från tidigare studier och jobb. Jag tycker det gått bra att filma, spela in ljud
+                och redigera ihop klippen. Jag har försökt att tänka på att filma klippen i olika bildkompositioner för
+                att variera perspektiven. Ljudet har även redigerats med olika nivåer där talet är högst, sen
+                bakgrundsljud och till sist musik.</p>
+            <p>Det som hade kunnat förbättras i filmen är eventuellt ljus och
+                färger, dels hade jag kunnat optimera detta bättre vid inspelningen men även efterbehandla eventulla
+                korrigeringar vid
+                redigeringen. Jag var även osäker på hur man textar ljud i filmer och därav användes * för att visa på
+                ljudtextning.</p>
+            <h3>Utrustning</h3>
+            <p>Jag har filmat med min mobiltelefon Samsung Galaxy S21 Ultra och använt mobilens röstinspelning
+                tillsammans med en liten puffmikrofon. Den programvara som använts för att redigering och klippning är
+                Adobe
+                Premiere Pro. Även ljudet har redigerats här. Musiken har laddats ner från Epidemic Sound.</p>
+            <h3>Tillgänglighet</h3>
+            <p>Jag skulle vilja påstå att filmen kan klassas som tillgänglig. Den har textas både på svenska och
+                engelska och jag valde även att texta
+                vissa ljud såsom hundskall och ljudet av ätande. Bakgrundsljuden finns kvar i filmen vilket underlättar
+                för personer med synsvårigheter att tolka vad som händer i filmen.</p>
+            <p>Det som eventuellt hade kunnat göra filmen ytterligare tillgänglig och inkluderande hade varit att göra
+                en syntolkad version om beskriver mer exakt vad som händer i filmen samt en teckenspråkstolkad version.
+            </p>
+            <p></p>
+        </section>
+    </main>
+    <!-- Footer med info om kurs, program och copyright -->
+    <footer>
+        <p>Laborationsuppgift för kursen DT200G, Grafisk teknik för webb</p>
+        <p>Webbutvecklingsprogrammet - Mittuniversitetet</p>
+        <p>&copy; Copyright Isa Westling, 2023</p>
+    </footer>
+</body>
+
+</html>

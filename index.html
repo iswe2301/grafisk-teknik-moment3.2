@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- HTML dokument -->
+<html lang="sv">
+
+<!-- Sidans huvud med metainformation, CSS, JS, titel -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="javascript/main.js" defer></script>
+    <title>Isa Westling</title>
+</head>
+
+<!-- Sidans kropp -->
+
+<body>
+    <div></div>
+    <video playsinline autoplay muted loop poster="images/background.jpg">
+        <source src="images/video.mp4" type="video/mp4">Din webbläsare stödjer inte video-elementet
+    </video>
+    <!-- Header -->
+    <header>
+        <!-- Meny med navigeringslänkar för datorläge -->
+        <nav id="computernav">
+            <!-- Logotyp med länk till startsida -->
+            <a href="start.html">
+                <img id="logo" src="images/logoisa.svg" alt="Isa Westling logotyp" loading="lazy">
+            </a>
+            <span id="navlinks">
+                <a href="start.html">Startsida</a>
+                <a id="active" href="index.html">Videobakgrund</a>
+            </span>
+        </nav>
+        <!-- Menyknapp med ikon för mobilmeny -->
+        <button class="menubtn">
+            <span class="menuicon">
+                <span id="line1"></span>
+                <span id="line2"></span>
+                <span id="line3"></span>
+            </span>
+            <span id="menutext">Meny</span>
+        </button>
+        <nav id="mobilenav">
+            <ul>
+                <li><a href="start.html">Startsida</a></li>
+                <li><a id="mobileactive" href="index.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="overlay">
+        <main id="backgroundtext">
+            <h1 id="backgroundheader">VIDEO&shy;BAKGRUND</h1>
+            <h2 id="backgroundheader2">Teknik</h2>
+            <section id="text">
+                <p>Jag har infogat videobakgrunden med video-elementet i HTML-koden. Filmen har ställts in med autoplay,
+                    mute
+                    och loop. Jag
+                    har även valt att lägga till attributet "poster" för att ha en backup som stillbild. Denna bild
+                    visas
+                    istället om videon tar lång tid att ladda in. Jag har också lagt in ett felmeddelande om filmen
+                    inte
+                    kan
+                    visas.</p>
+                <p>I CSS:en har video-elementet ställts in med fixerad position och 0 avstånd från topp, vänster, höger
+                    och
+                    botten. Storleken har
+                    satts till 100vw samt 100vh och object-fit till cover för att behålla orginal bildförhållande.
+                    Z-index
+                    har
+                    satts till -1 för att videon ska hamna under meny, navigation och header.</p>
+                <p>Jag har tagit hjälp av följande guide för att infoga videobakgrunden: <a
+                        href="https://blog.hubspot.com/website/video-background-css" target="_blank">How to Create a
+                        Video Background
+                        With
+                        CSS</a></p>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
